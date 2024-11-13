@@ -11,6 +11,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   box-sizing: border-box;
+  margin: 0;
 }
 
 main {
@@ -31,22 +32,30 @@ main {
   background-repeat: no-repeat;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
 .faq-wrapper {
   max-width: 41.78%;
   background-color: var(--white);
   z-index: 10;
-  padding: 50px;
+  padding: 50px 50px 30px 50px;
   border-radius: 25px;
 }
 
 h1 {
+  display: inline-block;
   font-weight: 700;
-  font-size: 4rem;
-  margin-top: 0;
+  font-size: 3rem;
+  margin: 0;
 }
 
-h1 img {
-  padding-right: 1rem;
+.header img {
+  display: inline-block;
+  padding-right: 2rem;
 }
 
 h2 {
@@ -58,11 +67,11 @@ h2 {
 }
 
 h2:not(:last-of-type) {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 h2:last-of-type {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 button {
@@ -88,4 +97,35 @@ h2:hover {
 
 hr {
   border: 1px var(--lightpink) solid;
+}
+
+@media screen and (max-width: 991px) {
+  .background {
+    background-image: url(/images/background-pattern-mobile.svg);
+    background-size: contain;
+  }
+
+  .faq-wrapper {
+    max-width: 90%;
+    margin: 0 1.5rem;
+    padding: 1.5rem 2rem 1rem 2rem;
+    border-radius: 5px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  button {
+    padding: 0;
+  }
+
+  h2 {
+    text-align: left;
+    font-size: 1.3rem;
+  }
+
+  .accordion {
+    font-size: 0.95rem;
+  }
 }
