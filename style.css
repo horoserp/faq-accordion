@@ -9,4 +9,76 @@ html,
 body {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: var(--lightpink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: -2;
+}
+
+.background {
+  height: 35.55vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-image: url("/images/background-pattern-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.faq-wrapper {
+  max-width: 41.78%;
+  background-color: var(--white);
+  z-index: 10;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-top: 0;
+}
+
+h1 img {
+  padding-right: 1rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+h2:not(:last-of-type) {
+  margin: 2rem 0;
+}
+
+h2:last-of-type {
+  margin-top: 2rem;
+}
+
+h2 img {
+  float: right;
+}
+
+.accordion {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.accordion:not(:nth-of-type(1)) {
+  display: none;
+}
+
+hr {
+  border: 1px var(--lightpink) solid;
 }
