@@ -108,24 +108,41 @@ hr {
   .faq-wrapper {
     max-width: 90%;
     margin: 0 1.5rem;
-    padding: 1.5rem 2rem 1rem 2rem;
+    padding: 1rem;
     border-radius: 5px;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .header {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .header img {
+    height: 20px;
+    padding-right: 10px;
   }
 
   button {
     padding: 0;
+    margin: 0.5rem 0;
   }
 
   h2 {
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  h2:last-of-type {
+    margin-top: 0;
   }
 
   .accordion {
     font-size: 0.95rem;
+    margin-bottom: 1rem;
   }
 }
