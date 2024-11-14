@@ -27,7 +27,7 @@ main {
   width: 100vw;
   position: absolute;
   top: 0;
-  background-image: url("/images/background-pattern-desktop.svg");
+  background-image: url("./images/background-pattern-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -101,7 +101,7 @@ hr {
 
 @media screen and (max-width: 991px) {
   .background {
-    background-image: url(/images/background-pattern-mobile.svg);
+    background-image: url("./images/background-pattern-mobile.svg");
     background-size: contain;
   }
 
