@@ -7,10 +7,10 @@ for (let i = 0; i < buttons.length; i++) {
     for (let k = 0; k < paragraphs.length; k++) {
       if (k === i) {
         paragraphs[k].style.display = "block";
-        images[k + 1].src = "../images/icon-minus.svg";
+        images[k + 1].src = "./images/icon-minus.svg";
       } else {
         paragraphs[k].style.display = "none";
-        images[k + 1].src = "../images/icon-plus.svg";
+        images[k + 1].src = "./images/icon-plus.svg";
       }
     }
   });
